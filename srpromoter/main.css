@@ -1,0 +1,220 @@
+/*  Fonts  */
+@font-face {
+    font-family: 'lato-bold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#LatoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato-regular';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular.woff') format('woff'),
+         url('../fonts/lato-regular.ttf') format('truetype'),
+         url('../fonts/lato-regular.svg#LatRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'p22_corinthia';
+    src: url('../fonts/p22_corinthia.eot');
+    src: url('../fonts/p22_corinthia.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/p22_corinthia.woff') format('woff'),
+         url('../fonts/p22_corinthia.ttf') format('truetype'),
+         url('../fonts/p22_corinthia.svg#P22Corinthia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/************************* CSS INDEX ***************************/
+/** GENERAL CSS **/
+/** TITLE CSS **/
+/** BACKGROUND CSS **/
+/** NAVBAR CSS **/
+/** PROJECT CSS **/
+/** FORM/ENUIRY CSS **/
+/** CONTACT CSS **/
+/** COPYRIGHTS **/
+
+
+/***** GENERAL CSS **********/
+
+p 
+{font-size: 16px;}
+.margin 
+{margin-bottom: 45px;}
+.container-fluid{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/****** TITLE CSS ***********/
+.hero-text{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color:white;
+  z-index: 1;
+  font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+}
+.hero-text h2{
+  /*font-size: 75px;*/
+  font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.hero-text h3{
+  font-size: 20px;
+}
+@media (max-width:800px){
+  .hero-text{
+      top:75%;
+  }
+  .hero-text h2{
+    font-size: 14px;
+    font-weight: 900;
+  }
+}
+
+ 
+/******** BACKGROUND CSS ********/
+
+
+.bg-2{
+  height: 500px;
+  background-color: white;
+  color:black;
+}
+
+.bg-2 p{
+max-width: 950px;
+padding: 2%;
+margin: 0 auto;
+font-size: 20px;
+text-align:center;
+font-weight:300px; 
+}
+.bg-3 , .bg-5{ 
+  background-color:#59302e;/*43A047;/*6D9535;/*BBCE8A;/*A7CECB;/*#272361;/*cDDc39;/*272361;/* #126184; /* Dark Blue */
+  color: #ffffff;
+    
+}
+.bg-4{
+  /*background-color: grey;*/
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 650px)
+{.bg-2 p
+  {
+    max-width: 500px;
+    font-size: 14px;
+  }
+}
+.bg-4 h3{
+  text-align: center;
+  color:black;
+}
+
+
+/******* NAVBAR CSS ***********/
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 300;
+    background-color:transparent;/*#00897B;/*6D9535;/*#BBCE8A;/*black;/*transparent;/*#dce2df;*/
+}
+.navbar a img{
+  margin-top: 0;
+  height: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navbar-nav  li a{
+  color:white;
+  font-size: medium
+}
+
+.navbar-nav  li a:hover {
+  color:#fbd205/* #BBCE8A /*1abc9c*/ !important;
+  background-color: transparent;
+}
+.navbar-toggle .icon-bar{
+  border:1px solid black;
+}
+#logo{
+  margin-top: 0;
+  padding: 0;
+}
+
+
+
+
+
+/********* PROJECTS CSS **********/ 
+.pd img{
+  height: 300px;
+  opacity: 0.7;
+  /*background-color: rgba(173, 191, 221,0.5);*/
+  vertical-align: top;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.pd img:hover , .navbar a img:hover{
+  opacity: 1.0;
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+  
+/******* FORM/ENQUIRY CSS ******/  
+form .wrapper{
+  margin-left: 20%;
+}
+.form-group input{
+  width: 60%;
+}
+button.btn{
+  background-color:grey;
+}
+button.btn:hover{
+  background-color:#59302ec2; 
+}
+/****** CONTACTS CSS ****/
+#contact{
+  padding-bottom: 0px;
+  padding-top: 2%;
+  /*background-color: #2f2f2f; /* Black Gray */
+  color: white;
+}
+#contact ul li{
+  list-style: none;
+  list-style: none;
+  margin-left: 15%;
+}
+.address p, li.first{
+  padding-top: 5%;
+}
+   
+/**** COPYRIGHTS *****/ 
+  
+#copyrights{
+  background-color:black ;/*white;/*#6D9535;/*#1abc9c;*/
+  width: 100%;
+  color: #fbd205;
+}

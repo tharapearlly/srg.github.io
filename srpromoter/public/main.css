@@ -1,0 +1,191 @@
+/*  Fonts  */
+@font-face {
+    font-family: 'lato-bold';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#LatoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lato-regular';
+    src: url('../fonts/lato-regular.eot');
+    src: url('../fonts/lato-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular.woff') format('woff'),
+         url('../fonts/lato-regular.ttf') format('truetype'),
+         url('../fonts/lato-regular.svg#LatRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'p22_corinthia';
+    src: url('../fonts/p22_corinthia.eot');
+    src: url('../fonts/p22_corinthia.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/p22_corinthia.woff') format('woff'),
+         url('../fonts/p22_corinthia.ttf') format('truetype'),
+         url('../fonts/p22_corinthia.svg#P22Corinthia') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+      /*font: 20px Montserrat, sans-serif;*/
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  
+
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+     /* background-color: #1abc9c; * Green */
+      color:black;/* black;*/
+      background-image: url(img/bg.png);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      height: 500px;
+      opacity: 0.9;
+  }
+  .bg-2 , .bg-4 { 
+      background-color: #126184; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-2 {
+    height: 500px;
+  }
+
+  .bg-2 p{
+    max-width: 950px;
+  padding: 2%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align:center;
+  font-weight:300px; 
+  }
+
+@media (max-width:800px){
+    .hero-text
+    {
+        top:75%;
+    }
+    .hero-text h2{
+        padding-top: 120%;
+    }
+}
+  
+@media screen and (max-width: 650px)
+  {.bg-2 p
+    {
+      max-width: 500px;
+      font-size: 14px;
+    
+    }
+    #logo{
+        height: 90%;
+    }
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+      
+  }
+
+  
+  .pd img{
+    height: 300px;
+    opacity: 0.7;
+    /*background-color: rgba(173, 191, 221,0.5);*/
+    vertical-align: top;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .pd img:hover{
+    opacity: 1.0;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+ 
+  
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+      font-weight: 200px;
+      background-color: black;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  #logo{
+    margin-top: 0;
+    padding: 0;
+  }
+  .hero-text
+  {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#0e191e;
+    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+      
+  }
+  .hero-text h2
+  {
+    /*font-size: 75px;*/
+    font-family: "p22_corinthia", Helvetica, Arial, sans-serif;
+    padding-right: 12px;
+    padding-left: 12px;
+
+  }
+  .hero-text h3{
+    font-size: 20px;
+  }
+
+  .bg-4 h3{
+    text-align: center;
+  }
+  form .wrapper{
+    margin-left: 20%;
+  }
+  
+  .form-group input{
+    width: 60%;
+  }
+  footer { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  footer ul li{
+    list-style: none;
+   }
+  footer ul li p{
+    width: 150px;
+    padding-top: 10%;
+    margin-left: 15%;
+  }
+  footer ul li img{
+    float: right;
+  }
+  .copyrights{
+    background-color: #1abc9c;
+  }
